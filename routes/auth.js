@@ -18,7 +18,7 @@ router.post(
         check('name', 'El nombre es obligarotio').not().isEmpty(),
         check('email', 'El email es obligarotio').isEmail(),
         check('password', 'El password debe de ser de 6 caracteres').isLength({ min: 6 }),
-        validarCampos
+        validarCampos,
     ],
     crearUsuario
 )
@@ -29,7 +29,7 @@ router.post(
         //* middlewares
         check('name', 'El nombre debe de ser de 6 caracteres').not().isEmpty().isLength({ min: 6 }),
         check('email', 'El email es obligarotio').isEmail(),
-        validarCampos
+        validarCampos,
     ],
     loginUsuario
 )

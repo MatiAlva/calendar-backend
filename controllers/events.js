@@ -1,5 +1,4 @@
 const { response } = require('express')
-const { body } = require('express-validator')
 const Evento = require('../models/Evento')
 
 

@@ -8,8 +8,8 @@ const { Router } = require('express')
 const { crearUsuario, loginUsuario, revalidarToken } = require('../controllers/auth')
 const router = Router()
 const { check } = require('express-validator')
-const { validarCampos } = require('../middlewares/validarCampos')
-const { validarJWT } = require('../middlewares/validarJWT')
+const { validarCampos } = require('../middlewares/validar-campos')
+const { validarJWT } = require('../middlewares/validar-jwt')
 
 router.post(
     '/new',
